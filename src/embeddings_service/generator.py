@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 from typing import List
 import numpy as np
-from ..shared.utils import get_logger
+from src.shared.utils import get_logger
 
 logger = get_logger(__name__)
 

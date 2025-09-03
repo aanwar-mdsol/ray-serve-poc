@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from ..shared.models import UserInputRequest, UserInputResponse
-from ..shared.utils import get_logger, create_response
-from .client import EmbeddingsClient
+from src.shared.models import UserInputRequest, UserInputResponse
+from src.shared.utils import get_logger, create_response
+from src.user_input_service.client import EmbeddingsClient
 
 logger = get_logger(__name__)
 

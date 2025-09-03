@@ -1,7 +1,7 @@
 import httpx
 from typing import Optional
-from ..shared.models import EmbeddingRequest, EmbeddingResponse
-from ..shared.utils import get_logger
+from src.shared.models import EmbeddingRequest, EmbeddingResponse
+from src.shared.utils import get_logger
 
 logger = get_logger(__name__)
 
