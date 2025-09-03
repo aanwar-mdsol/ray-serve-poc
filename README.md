@@ -1,4 +1,4 @@
-# Ray Embeddings App
+# Ray POC Application
 
 A FastAPI application with vector embeddings generation deployed using Ray Serve. Features two microservices for text processing and embedding generation.
 
