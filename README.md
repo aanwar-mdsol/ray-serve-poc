@@ -42,10 +42,9 @@ ray_basic_app/
 curl -sSL https://install.python-poetry.org | python3 -
 
 # Install dependencies
-poetry install
-
-# Activate environment
-poetry shell
+poetry install 
+    # OR
+make dev-setup
 ```
 
 ### 2. Run the Application
@@ -82,18 +81,7 @@ python demo.py
 
 ## API Endpoints
 
-### Local Deployment
-
-**User Input Service (Port 8000)**
-- `GET /health` - Health check
-- `POST /process` - Takes user text input and generate embeddings
-
-**Embeddings Service (Port 8001)**
-- `GET /health` - Health check  
-- `POST /embed` - Generate embeddings for text
-
 ### Ray Serve Deployment
-
 **User Input Service**
 - `GET /api/health` - Health check
 - `POST /api/process` - Process user input and generate embeddings
