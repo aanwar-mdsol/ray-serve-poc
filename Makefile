@@ -38,24 +38,8 @@ clean: ## Clean up Ray and Python cache
 	find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 	find . -type f -name "*.pyc" -delete 2>/dev/null || true
 
-requirements: ## Export Poetry dependencies to requirements.txt
-	@echo "Exporting requirements..."
-	poetry run pip freeze > requirements.txt
-
-shell: ## Activate Poetry shell
-	@echo "Activating Poetry shell..."
-	poetry shell
-
-format: ## Format code with black
-	@echo "Formatting code..."
-	poetry run black src/ *.py
-
-lint: ## Lint code with flake8
-	@echo "Linting code..."
-	poetry run flake8 src/ *.py
-
 dev-setup: install ## Complete development setup
 	@echo "Development setup complete!"
 	@echo "   Run 'make run-local' to start local services"
-	@echo "   Run 'make run-ray' to deploy with Ray"
+	@echo "   Run 'make run-ray' to deploy with Ray Serve"
 	@echo "   Run 'make test' to test the services"
