@@ -66,7 +66,10 @@ python ray_deploy.py
 ```
 - All services: http://localhost:8000
 - Ray Dashboard: http://localhost:8265
+    ![alt text](assets/ray_dashboard.png)
 
+- Ray Serve Dashboard
+    ![alt text](assets/ray_serve.png)
 ### 3. Test the Services
 
 ```bash
