@@ -1,4 +1,4 @@
-.PHONY: install run-local run-ray test test-local test-ray demo clean requirements shell format lint dev-setup help
+.PHONY: install run-local run-ray test test-local test-ray demo clean requirements dev-setup help
 
 help: ## Show this help message
 	@echo "Available commands:"
